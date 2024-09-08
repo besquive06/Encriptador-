@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: rgb(200, 133, 226);
+    color: pink;
+    font-family: "Orbitron", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('imagenes_encriptad/fondo.jpg');
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; 
+}
+
+header{
+    width: 100%; /* Asigna el tamaño del contenedor, suponiendo que deseas cambiar el tamaño del elemento */
+    height: 25%; /* Asigna una altura al contenedor */
+    font-size: 100%;
+    color: #fefbff;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.container {
+    margin: 10%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    height: 1024px;
+    width: 1440px;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: url('imagenes_encriptad/fondo.jpg');
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Hace que la imagen de fondo permanezca fija cuando se desplaza la página */
+}
+
+#entradaTexto, #salidaTexto {
+    margin: 10%;
+    box-sizing: border-box;
+    overflow: hidden ;
+    width: 500px;
+    height: 900px;
+    border-radius: 32px;
+    font-size: 32px;
+    font-family: "Orbitron", sans-serif;
+    padding: 2px;
+}
+
+#boton1, #boton2, #copyButton {
+    width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    position: absolute;
+    font-size: 16px;
+    font-family: "Orbitron", sans-serif;
+}
+
+#boton1 {
+    left: 120px;
+    top: 900px;
+    background-color: #380447;
+    color: white;
+}
+
+#boton1:hover {
+    background-color: #4a0558; /* Cambia a un color más claro al pasar el mouse */
+}
+
+#boton2 {
+    left: 480px;
+    top: 900px;
+    color: #380447;
+    background-color: #e083c9;
+}
+
+#copyButton {
+    left: 936px;
+    top: 900px;
+    color: #380447;
+    background-color: #e083c9;
+}
+
+footer {
+    background-color: #d35dd3;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 5px 0;
+    color: #333;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+footer a {
+    color: #380447;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos responsivos */
+
+@media (max-width: 1440px) {
+    .container {
+        width: 100%;
+        height: auto;
+        margin: 5%;
+    }
+
+    #entradaTexto, #salidaTexto {
+        width: 100%;
+        height: auto;
+    }
+
+    #boton1, #boton2, #copyButton {
+        position: relative;
+        left: 0;
+        top: auto;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 50px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    #entradaTexto, #salidaTexto {
+        width: 90%;
+        height: auto;
+    }
+
+    #boton1, #boton2, #copyButton {
+        width: 80%;
+        height: 50px;
+    }
+}
+
+@media (max-width: 375px) {
+    .titulo {
+        font-size: 30px;
+    }
+
+    #entradaTexto, #salidaTexto {
+        width: 100%;
+        height: auto;
+    }
+
+    #boton1, #boton2, #copyButton {
+        width: 90%;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+}

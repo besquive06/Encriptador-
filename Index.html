@@ -1,61 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador_Brit</title>
-    <link rel="stylesheet" href=".css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <header>
-        <h1 class="titulo"> Encriptador de Texto </h1>    
+        <h1 class="titulo"> Encriptador de Texto </h1>
     </header>
-        <img src="imagenes_encriptad/logo inial_a.png">
+    <img src="imagenes_encriptad/logo inial_a.png">
 
-        <main class="container">
-            
-            <div class="container__caja1">
-                <textarea id="entradaTexto" placeholder="Escribe aquí..."></textarea>
+    <main class="container">
 
-                
-                <div class="container__caja1__button">
-                    <input type="button" id="boton1" onclick="encryptWithText()" value="Encriptar">
-                    <input type="button" id="boton2" onclick="decryptWithText()" value="Desencriptar">
-                 </div>     
-                
-            </div>          
+        <div class="container__caja1">
+            <textarea id="entradaTexto" placeholder="Escribe aquí..."></textarea>
 
-            <div class="container__caja2">
-                <textarea id="salidaTexto" placeholder=" El resultado se mostrará aquí..."></textarea>
-                <button id="copyButton">Copiar Texto</button>
+
+            <div class="container__caja1__button">
+                <input type="button" id="boton1" onclick="encryptWithText()" value="Encriptar">
+                <input type="button" id="boton2" onclick="decryptWithText()" value="Desencriptar">
             </div>
-            
-        </main>          
 
-        <footer> 
-            <p>Desarrollado por: Britany Esquivel</p>
-            <p>
-                <a href="https://github.com/besquive06" target="_blank">
-                    <i class="fab fa-github"></i> besquive06
-                </a>
-            </p>
-            <p>
-                <a href="mailto:besquivel.06@gmail.com">
-                    <i class="fas fa-envelope"></i> besquivel.06@gmail.com
-                </a>    
-            </p>
-            <p>
-                <a href="https://www.linkedin.com/in/britany-massiel-esquivel-quiroz-973798162/"></a>
-                <i class="fab fa-linkedin"></i> Britany Esquivel
-            </p>
-        </footer>
+        </div>
 
-    <script src=".js"></script>
+        <div class="container__caja2">
+            <textarea id="salidaTexto" placeholder=" El resultado se mostrará aquí..."></textarea>
+            <button id="copyButton">Copiar Texto</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Desarrollado por: Britany Esquivel</p>
+        <p>
+            <a href="https://github.com/besquive06" target="_blank">
+                <i class="fab fa-github"></i> besquive06
+            </a>
+        </p>
+        <p>
+            <a href="mailto:besquivel.06@gmail.com">
+                <i class="fas fa-envelope"></i> besquivel.06@gmail.com
+            </a>
+        </p>
+        <p>
+            <a href="https://www.linkedin.com/in/britany-massiel-esquivel-quiroz-973798162/"></a>
+            <i class="fab fa-linkedin"></i> Britany Esquivel
+        </p>
+    </footer>
+
+    <script src="app.js"></script>
 
 </body>
 
 </html>
-
-
